@@ -1,5 +1,5 @@
 # GSoC 2024 Report: P4 Compiler Documentation
-The official report of [my project in Google Summer of Code 2024](https://summerofcode.withgoogle.com/programs/2024/projects/u2HpJKI2)  <br>  
+The official report of [my project in Google Summer of Code 2024](https://summerofcode.withgoogle.com/programs/2024/projects/u2HpJKI2)  
 **Mentors:** [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy) <br> 
 **Organization:** [The P4 Language Consortium](https://p4.org/)  <br>
 **Contributor:** [Adarsh Rawat](https://github.com/AdarshRawat1)  <br>
