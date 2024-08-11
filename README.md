@@ -1,9 +1,9 @@
 # GSoC 2024 Report : P4 Compiler Documentation
 The official report of [my work in Google Summer of Code 2024](https://github.com/user-attachments/assets/f026bbfb-4790-4a58-98fb-4a5b28be1cda)
 
-Mentors: [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy)
-Organization: [The P4 Language Consortium](https://p4.org/)
-Contributor: [Adarsh Rawat](https://github.com/AdarshRawat1)
+Mentors: [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy) <br>
+Organization: [The P4 Language Consortium](https://p4.org/) <br>
+Contributor: [Adarsh Rawat](https://github.com/AdarshRawat1) <br>
 ![alt text](image.png)
 
 ## Project Overview:
@@ -75,9 +75,8 @@ Click to View Previous Diagrams || Click to view Updated Diagrams
 ## A Touch of Fun in the P4 Compiler Architecture Diagram
 In the spirit of keeping things lively, we came up with the idea of sneaking a little Easter egg into the P4 Compiler’s documentation during one of our team meetings. If you’re feeling curious (or just bored), try clicking on the P4 Compiler logo in the top left corner of the homepage. What happens next? Well, the architecture diagram decides to throw a tiny celebration by animating its lines, as if to say, “Surprise! You found us!”
 
+![Interactive Animation Toggle in P4 Compiler Architecture Diagram](https://github.com/user-attachments/assets/da586665-08b7-42ff-93ea-461903161317)
 
-
-Interactive Animation Toggle in P4 Compiler Architecture Diagram
 This quirky touch isn’t just for giggles — it’s a subtle reminder that even in the serious world of compiler documentation, a bit of fun can go a long way. Plus, it might just keep you on your toes, wondering what other surprises might be hiding in the corners of the site. Spoiler: there aren’t any… yet.
 
 Reflections and Learnings
@@ -85,4 +84,4 @@ During this project, I often had to change my approach and come up with new idea
 
 I learned the importance of learning in public. Initially, I felt skeptical about sharing my progress and failures openly, but the overwhelmingly positive response and genuine support from the community and mentors reassured me. This encouragement was instrumental in helping me work confidently towards the project.
 
-This was one of the best experiences I’ve ever had. I sincerely thank Google, and mentors for selecting me for this GSoC Program and allowing me to see how amazing coding can be.
+This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
