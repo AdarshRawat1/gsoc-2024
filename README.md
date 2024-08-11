@@ -1,8 +1,8 @@
 # GSoC 2024 Report : P4 Compiler Documentation
 The official report of [my work in Google Summer of Code 2024](https://github.com/user-attachments/assets/f026bbfb-4790-4a58-98fb-4a5b28be1cda) <br>
-**Mentors:** [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy)
-**Organization:** [The P4 Language Consortium](https://p4.org/)
-**Contributor:** [Adarsh Rawat](https://github.com/AdarshRawat1)
+**Mentors:** [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy) <br>
+**Organization:** [The P4 Language Consortium](https://p4.org/) <br>
+**Contributor:** [Adarsh Rawat](https://github.com/AdarshRawat1) <br>
 ![alt text](image.png)
 
 ## Project Overview:
@@ -84,5 +84,6 @@ During this project, I often had to change my approach and come up with new idea
 
 I learned the importance of learning in public. Initially, I felt skeptical about sharing my progress and failures openly, but the overwhelmingly positive response and genuine support from the community and mentors reassured me. This encouragement was instrumental in helping me work confidently towards the project.
 
-This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
 <hr>
+This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
+
