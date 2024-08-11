@@ -25,7 +25,7 @@ The official report of [my project in Google Summer of Code 2024](https://summer
    - [Reflections and Learnings](#reflections-and-learnings)
 6. [Final Thoughts](#final-thoughts)
 
-## Project Overview![Untitled design](https://github.com/user-attachments/assets/cc9c6c27-0407-4f20-ba83-172274b922ff)
+## Project Overview
 
 For Google Summer of Code 2024, I developed an automated documentation system for the P4 Compiler. The project focused on improving the accessibility and organization of the P4 Compiler’s documentation, leveraging Doxygen for documentation generation and GitHub Actions for automation. The results include a centralized, up-to-date documentation site hosted on GitHub Pages, with enhanced navigation and interactive features.
 
