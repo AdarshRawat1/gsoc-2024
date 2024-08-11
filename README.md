@@ -1,22 +1,24 @@
 # GSoC 2024 Report : P4 Compiler Documentation
-The official report of [my work in Google Summer of Code 2024](https://github.com/user-attachments/assets/f026bbfb-4790-4a58-98fb-4a5b28be1cda)
-
-Mentors: [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy) <br>
-Organization: [The P4 Language Consortium](https://p4.org/) <br>
-Contributor: [Adarsh Rawat](https://github.com/AdarshRawat1) <br>
+The official report of [my work in Google Summer of Code 2024](https://github.com/user-attachments/assets/f026bbfb-4790-4a58-98fb-4a5b28be1cda) <br>
+**Mentors:** [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy)
+**Organization:** [The P4 Language Consortium](https://p4.org/)
+**Contributor:** [Adarsh Rawat](https://github.com/AdarshRawat1)
 ![alt text](image.png)
 
 ## Project Overview:
 For Google Summer of Code 2024, I developed an automated documentation system for the P4 Compiler. The project focused on improving the accessibility and organization of the P4 Compiler’s documentation, leveraging Doxygen for documentation generation and GitHub Actions for automation. The results include a centralized, up-to-date documentation site hosted on GitHub Pages, with enhanced navigation and interactive features.
 
 ## Technical Considerations:
+> [!NOTE]  
+> Previews in this report are mockups and do not reflect the current state of the documentation. They were used for iterative development during the project.
 ### Personal Repository & Netlify for Builds:
 - Utilized a personal repository with Netlify for initial builds and sharing mockups. This approach allowed for iterative development and testing before deploying to GitHub Pages on official Repository.
+
 - Mockups Created during iteration
-  - Doxygen output with obsolete documentation
-  - Sphinx version with “pydata” theme
-  - Doxygen + Doxygen Awesome CSS With Nav Bar
-  - [Current] — Doxygen + Doxygen Awesome CSS Side bar only theme
+  - [Doxygen output with obsolete documentation](https://p4-compiler-docs.netlify.app/)
+  - [Sphinx version with “pydata” theme](https://p4-docs.netlify.app/)
+  - [Doxygen + Doxygen Awesome CSS With Nav Bar](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/)
+  - [[Current] — Doxygen + Doxygen Awesome CSS Side bar only theme](https://p4lang.github.io/p4c/)
 
 ### Deployment Options:
 - After considering various deployment platforms such as Netlify and Vercel, GitHub Pages was selected for deployment. This choice was motivated by the desire to avoid additional hosting costs and administrative overhead. This decision was reached after consulting with mentors.
@@ -54,8 +56,6 @@ For Google Summer of Code 2024, I developed an automated documentation system fo
 - Automated preview creation for pull requests, including preview link and deployment status in comments.
 - Managed broken builds by updating PR comments with status information.
 ## Key Improvements
-> [!NOTE]  
-> Previews in this report are mockups and do not reflect the current state of the documentation. They were used for iterative development during the project.
 
 ### High-Quality Diagrams with Interactive SVGs
 
@@ -79,9 +79,10 @@ In the spirit of keeping things lively, we came up with the idea of sneaking a l
 
 This quirky touch isn’t just for giggles — it’s a subtle reminder that even in the serious world of compiler documentation, a bit of fun can go a long way. Plus, it might just keep you on your toes, wondering what other surprises might be hiding in the corners of the site. Spoiler: there aren’t any… yet.
 
-Reflections and Learnings
+## Reflections and Learnings
 During this project, I often had to change my approach and come up with new ideas to solve problems. I learned how a bit of help from others can quickly solve issues that might take me hours to figure out on my own.
 
 I learned the importance of learning in public. Initially, I felt skeptical about sharing my progress and failures openly, but the overwhelmingly positive response and genuine support from the community and mentors reassured me. This encouragement was instrumental in helping me work confidently towards the project.
 
 This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
+<hr>
