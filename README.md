@@ -2,8 +2,8 @@
 The official report of [my project in Google Summer of Code 2024](https://summerofcode.withgoogle.com/programs/2024/projects/u2HpJKI2)  
 **Mentors:** [Davide Scano](https://github.com/Dscano), [Fabian Ruffy](https://github.com/fruffy) <br> 
 **Organization:** [The P4 Language Consortium](https://p4.org/)  <br>
-**Contributor:** [Adarsh Rawat](https://github.com/AdarshRawat1)  <br>
-![Gsoc2024 - The P4 Language Consortium](https://github.com/user-attachments/assets/1b921a0b-644b-445e-b641-1dabd1f20f9a)
+**Contributor:** [Adarsh Rawat](https://github.com/AdarshRawat1)    <br>   
+![Gsoc2024 - The P4 Language Consortium](https://github.com/user-attachments/assets/3d1f851a-97de-4fc2-87c4-9532b2bc96f5)
 
 
 
