@@ -10,6 +10,7 @@ The official report of [my project in Google Summer of Code 2024](https://summer
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Technical Considerations](#technical-considerations)
+   - [Doxygen vs. Sphinx: Documentation Tools Comparison](#doxygen-vs-sphinx-documentation-tools-comparison)
    - [Personal Repository & Netlify for Builds](#personal-repository--netlify-for-builds)
    - [Deployment Options](#deployment-options)
    - [Workflow Considerations and Challenges](#workflow-considerations-and-challenges)
@@ -24,6 +25,8 @@ The official report of [my project in Google Summer of Code 2024](https://summer
    - [A Touch of Fun in the P4 Compiler Architecture Diagram](#a-touch-of-fun-in-the-p4-compiler-architecture-diagram)
    - [Reflections and Learnings](#reflections-and-learnings)
 6. [Final Thoughts](#final-thoughts)
+7. [References](#references)
+
 
 ## Project Overview
 
@@ -32,6 +35,21 @@ For Google Summer of Code 2024, I developed an automated documentation system fo
 ## Technical Considerations
 > [!NOTE]  
 > Previews in this report are mockups and do not reflect the current state of the documentation. They were used for iterative development during the project.
+
+### Doxygen vs. Sphinx: Documentation Tools Comparison
+
+Initially, I considered using Sphinx with Doxygen and Breathe for documentation [[1]](#1-medium-article-on-using-sphinx-doxygen-and-breathe-c-documentation-with-doxygen-cmake-sphinx--breathe)[[2]](#2-clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake). However, after discussing with mentors and evaluating the tools, we decided to use Doxygen with Doxygen Awesome CSS for the following reasons:
+
+- **Doxygen**: Provides straightforward and easy-to-generate documentation but lacks mobile responsiveness. Examples of Doxygen-generated docs can be found here:
+  - [Eigen Documentation](https://eigen.tuxfamily.org/dox/)
+  - [ALIB Documentation](https://alib.dev/)
+
+- **Doxygen + Awesome CSS**: Addresses the mobile responsiveness issue and improves visual appeal with enhanced CSS styling. It allows for customization without modifying the HTML structure and includes dark mode support. You can view an example here:
+  - [P4C Prototype Documentation](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/)
+
+- **Doxygen + Breathe / Exhale + Sphinx**: Sphinx offers greater flexibility and control over documentation structure compared to Doxygen’s markup. It's particularly useful for including tutorials. However, we decided against it for our project to avoid added complexity, especially since tutorials would be maintained separately. 
+
+After discussions with mentors, it became clear that Doxygen with Doxygen Awesome CSS met all our needs while avoiding the additional complexity of incorporating Sphinx and Exhale. This choice allowed us to utilize a tool familiar to maintainers and contributors without introducing a new layer of complexity.
 
 ### Personal Repository & Netlify for Builds
 1. Utilized a personal repository with Netlify for initial builds and sharing mockups. This approach allowed for iterative development and testing before deploying to GitHub Pages on the official repository.
@@ -46,7 +64,6 @@ After considering various deployment platforms such as Netlify and Vercel, GitHu
 
 ### Workflow Considerations and Challenges
 1. **Setting Up External Pull Request Permissions**: Configuring the necessary permissions for external pull requests presented a significant challenge due to stringent security requirements. The process required extensive troubleshooting and experimentation. Ultimately, the `pull_request_target` trigger proved instrumental in resolving this issue.
-2. **Doxygen vs. Sphinx**: Doxygen was chosen over Sphinx despite Sphinx offering potentially more flexibility. The decision was based on existing familiarity with Doxygen and the specific needs of the project, as well as the lack of a compelling reason to switch.
 
 ## Project Phases and Achievements
 
@@ -111,3 +128,9 @@ I learned the importance of learning in public. Initially, I felt skeptical abou
 
 ## Final Thoughts
 This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
+
+
+## References
+
+##### [1]: [Medium article on using Sphinx, Doxygen, and Breathe: C++ Documentation with Doxygen, CMake, Sphinx & Breathe](https://medium.com/practical-coding/c-documentation-with-doxygen-cmake-sphinx-breathe-for-those-of-use-who-are-totally-lost-part-2-21f4fb1abd9f)
+##### [2] [Microsoft Dev Blog on functional C++ documentation: Clear Functional C++ Documentation with Sphinx, Breathe, and Doxygen](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
