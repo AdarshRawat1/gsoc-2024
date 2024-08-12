@@ -126,6 +126,20 @@ During this project, I often had to change my approach and come up with new idea
 
 I learned the importance of learning in public. Initially, I felt skeptical about sharing my progress and failures openly, but the overwhelmingly positive response and genuine support from the community and mentors reassured me. This encouragement was instrumental in helping me work confidently towards the project.
 
+### Doxygen Update and the Power of Open Source
+Background on Doxygen v1.12.0 Feature
+Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavored comments, allowing Doxygen commands to be hidden in GitHub previews using the `<!--! ... -->` syntax. This feature was the direct result of a feature request [[3]](#3-feature-request--capability-to-render-github-flavor-markdown-comments) I submitted to address the issue of visible Doxygen commands cluttering README files and other Markdown documents.
+
+#### Impact of the Update
+- **Updated Workflow:** I updated the Doxygen workflow action from v1.11.0 to v1.12.0, ensuring that all documentation now takes advantage of this new feature. This update mandates the strict use of Doxygen v1.12.0 for consistent output across the project.
+- **Enhanced Documentation:** By adopting this new comment style, all Doxygen commands are now hidden in GitHub previews, making the documentation cleaner and more professional.
+- **Dependency Management:** Dependencies were updated accordingly to support this new Doxygen version. This change requires all contributors to upgrade to `v1.12.0` to avoid confusion during documentation merges, particularly when using commands like `<!--!\include{doc} "../lib/README.md"-->` as they will not be processed by previous versions of doxygen.
+
+#### Reflections on Open Source Collaboration
+This experience highlighted the immense power of open-source tools and communities. The rapid incorporation of the feature request into Doxygen's latest release underscored the collaborative spirit and responsiveness that are the hallmarks of open source. It also reinforced the importance of contributing to open-source projects, as even small changes can have a significant impact on a wide range of users.
+
+In this project, I saw firsthand how contributions from the community can lead to enhancements that benefit everyone. Working within an open-source ecosystem allowed me to both give back and learn from others, reinforcing the idea that open-source software isn't just about code — it's about community.
+
 ## Final Thoughts
 This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
 
@@ -134,3 +148,5 @@ This was one of the best experiences I’ve ever had. I sincerely thank Google a
 
 ##### [1]: [Medium article on using Sphinx, Doxygen, and Breathe: C++ Documentation with Doxygen, CMake, Sphinx & Breathe](https://medium.com/practical-coding/c-documentation-with-doxygen-cmake-sphinx-breathe-for-those-of-use-who-are-totally-lost-part-2-21f4fb1abd9f)
 ##### [2] [Microsoft Dev Blog on functional C++ documentation: Clear Functional C++ Documentation with Sphinx, Breathe, and Doxygen](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
+
+##### [3]: [Feature Request : Capability to render GitHub flavor Markdown comments](https://github.com/doxygen/doxygen/issues/10959)
