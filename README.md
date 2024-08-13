@@ -63,7 +63,40 @@ After discussions with mentors, it became clear that Doxygen with Doxygen Awesom
 After considering various deployment platforms such as Netlify and Vercel, GitHub Pages was selected for deployment. This choice was motivated by the desire to avoid additional hosting costs and administrative overhead. This decision was reached after consulting with mentors.
 
 ### Workflow Considerations and Challenges
-1. **Setting Up External Pull Request Permissions**: Configuring the necessary permissions for external pull requests presented a significant challenge due to stringent security requirements. The process required extensive troubleshooting and experimentation. Ultimately, the `pull_request_target` trigger proved instrumental in resolving this issue.
+#### Background : Commenting on PR   
+Handling **pull requests (PRs) from external forks** presents unique challenges in GitHub Actions, primarily due to security restrictions imposed by GitHub. When a PR is triggered from a fork, the `GITHUB_TOKEN` generated for that workflow run has limited permissions, specifically lacking write access to the repository. This limitation is designed to prevent unauthorized actions that could potentially compromise the security of the repository.
+As a result, actions such as commenting on a PR, which require write access, fails with an error message like `Resource not accessible by integration`.
+#### Workaround 
+**Using `pull_request_target` event instead of `pull_request`**: This event runs in the context of the base repository, where the workflow file is stored, and grants the `GITHUB_TOKEN` the necessary write permissions. 
+However, this approach comes with its own set of risks, as it executes code from the forked repository with elevated privileges, which could potentially be malicious.
+
+#### Background : Label Check Implementation for `pull_request_target` Trigger
+In my GitHub Actions workflow, I encountered a limitation with the `pull_request_target` trigger. Specifically, the conditional check using contains on PR labels wasn't functioning as expected.
+
+```bash
+# This condition didn't work with the pull_request_target trigger
+if: ${{ contains(github.event.pull_request.labels.*.name, 'documentation') }}
+```
+#### Workaround 
+**Custom Label Check** To ensure that only pull requests with the 'documentation' label trigger the workflow, I implemented a custom label check using actions/github-script@v7(GitHub’s REST API).
+
+This script iterates over the labels attached to the PR and returns true if the `documentation` label is present. This condition is then used to control subsequent steps in the workflow.
+```bash 
+- name: Check PR Label
+  id: check-label
+  if: ${{ github.event_name == 'pull_request_target' }}
+  uses: actions/github-script@v7
+  with:
+    script: |
+      const { data: labels } = await github.rest.issues.listLabelsOnIssue({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        issue_number: context.issue.number
+      });
+      const hasDocumentationLabel = labels.some(label => label.name === 'documentation');
+      return hasDocumentationLabel;
+```
+
 
 ## Project Phases and Achievements
 
