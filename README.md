@@ -53,22 +53,39 @@ Initially, I considered using Sphinx with Doxygen and Breathe for documentation 
 
 After discussions with mentors, it became clear that Doxygen with Doxygen Awesome CSS met all our needs while avoiding the additional complexity of incorporating Sphinx and Exhale. This choice allowed us to utilize a tool familiar to maintainers and contributors without introducing a new layer of complexity.
 
-### Documentation Development and Build Process
-1. **Initial Development and Testing:** Utilized a personal repository and Netlify for early-stage builds and sharing of mockups. This approach facilitated iterative development and testing before the final deployment on GitHub Pages. Mockup examples include: 
-   - [Doxygen output with obsolete documentation](https://p4-compiler-docs.netlify.app/)
+## Documentation Development and Build Process
+During the early stages of development, I utilized a personal repository with Netlify to create and share website mockups. This approach allowed for iterative testing and refinement before deploying to the official GitHub Pages site. The following mockups were created during this phase:
+   - [Doxygen output with obsolete documentation](https://p4-compiler-docs.netlify.app/) This early mockup used Doxygen to generate basic documentation, which was hosted on Netlify.
      ![image](https://github.com/user-attachments/assets/c03dcc8e-31fa-4f47-b259-ba8e00da0490)
-   - [Sphinx version with “pydata” theme](https://p4-docs.netlify.app/)
+   - [Sphinx version with “pydata” theme](https://p4-docs.netlify.app/) An alternative mockup using Sphinx with the pydata theme was explored but later discarded in favor of Doxygen.
      ![image](https://github.com/user-attachments/assets/01bcdbb0-137d-4af1-899a-d25811aecc84)
-   - [Doxygen + Doxygen Awesome CSS With Nav Bar](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/)
+   - [Doxygen + Doxygen Awesome CSS With Nav Bar](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/) The mockup which was used as a base for the official documentation.
      ![image](https://github.com/user-attachments/assets/a1a3595c-ad41-49da-9221-53e55783b358)
 
-2. **Transition to GitHub Pages:** After refining the mockups and confirming the build process, the final documentation was deployed on GitHub Pages for consistent and reliable access. This shift from Netlify to GitHub Pages streamlined the hosting process and ensured seamless integration with the main repository.
+### Deployment Options : Transition to GitHub Pages
+After finalizing the mockups and build process, the documentation was deployed on GitHub Pages. This transition from Netlify to GitHub Pages streamlined hosting, ensured consistent integration with the main repository, and eliminated additional costs and administrative overhead. The choice was made after evaluating platforms like Netlify and Vercel and consulting with mentors.
 
-### Deployment Options
-After considering various deployment platforms such as Netlify and Vercel, GitHub Pages was selected for deployment. This choice was motivated by the desire to avoid additional hosting costs and administrative overhead. This decision was reached after consulting with mentors.
+## Workflow Automation 
 
-### Workflow Considerations and Challenges
-#### Background : Commenting on PR   
+### Doxygen Automated Builds Workflow
+[PR - Feat: PR Preview Workflow via GitHub Pages](https://github.com/p4lang/p4c/pull/4702)
+An automated workflow was set up to handle Doxygen documentation builds. This process ensures that the documentation is updated consistently with the latest changes, providing a reliable and up-to-date reference for all contributors.
+
+### Automated PR Preview Workflow
+[PR - Feat: PR Preview Workflow via GitHub Pages](https://github.com/p4lang/p4c/pull/4848)
+To make reviewing documentation changes smoother and more transparent, I introduced a new PR preview workflow. This update enhances how we assess documentation updates before they merge into the main branch by using GitHub Pages for live previews. This means we can see exactly how changes will look in real-time, making it easier to review and refine documentation.
+
+#### Key Updates
+- **PR Preview:** Automatically builds and deploys each documentation PR to a unique GitHub Pages URL.
+- **Comment Updates:** Adds comments with preview links and build status.
+- **Broken Builds:** Detects and reports any build issues.
+#### Benefits
+- **Immediate Feedback:** Real-time previews for faster review and adjustments.
+- **Automatic Notifications:** Alerts for build statuses and failures.
+#### Usage
+When a PR is tagged with `documentation`, the workflow deploys a preview to GitHub Pages and posts a comment with the preview link and build status.
+
+### Background : Challenges with PRs from External Forks  
 Handling **pull requests (PRs) from external forks** presents unique challenges in GitHub Actions, primarily due to security restrictions imposed by GitHub. When a PR is triggered from a fork, the `GITHUB_TOKEN` generated for that workflow run has limited permissions, specifically lacking write access to the repository. This limitation is designed to prevent unauthorized actions that could potentially compromise the security of the repository.
 As a result, actions such as commenting on a PR, which require write access, fails with an error message like `Resource not accessible by integration`.
 #### Workaround 
