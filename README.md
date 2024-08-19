@@ -62,7 +62,6 @@ After discussions with mentors, it became clear that Doxygen with Doxygen Awesom
      ![image](https://github.com/user-attachments/assets/01bcdbb0-137d-4af1-899a-d25811aecc84)
    - [Doxygen + Doxygen Awesome CSS With Nav Bar](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/)
      ![image](https://github.com/user-attachments/assets/a1a3595c-ad41-49da-9221-53e55783b358)
-   - [[Current] — Doxygen + Doxygen Awesome CSS Side bar only theme](https://p4lang.github.io/p4c/)
 
 ### Deployment Options
 After considering various deployment platforms such as Netlify and Vercel, GitHub Pages was selected for deployment. This choice was motivated by the desire to avoid additional hosting costs and administrative overhead. This decision was reached after consulting with mentors.
