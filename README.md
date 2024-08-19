@@ -54,11 +54,14 @@ Initially, I considered using Sphinx with Doxygen and Breathe for documentation 
 After discussions with mentors, it became clear that Doxygen with Doxygen Awesome CSS met all our needs while avoiding the additional complexity of incorporating Sphinx and Exhale. This choice allowed us to utilize a tool familiar to maintainers and contributors without introducing a new layer of complexity.
 
 ### Personal Repository & Netlify for Builds
-1. Utilized a personal repository with Netlify for initial builds and sharing mockups. This approach allowed for iterative development and testing before deploying to GitHub Pages on the official repository.
+1. Intially Utilized a personal repository with Netlify for initial builds and sharing mockups. This approach allowed for iterative development and testing before deploying to GitHub Pages on the official repository.
 2. Created mockups during iteration:
    - [Doxygen output with obsolete documentation](https://p4-compiler-docs.netlify.app/)
+     ![image](https://github.com/user-attachments/assets/c03dcc8e-31fa-4f47-b259-ba8e00da0490)
    - [Sphinx version with “pydata” theme](https://p4-docs.netlify.app/)
+     ![image](https://github.com/user-attachments/assets/01bcdbb0-137d-4af1-899a-d25811aecc84)
    - [Doxygen + Doxygen Awesome CSS With Nav Bar](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/)
+     ![image](https://github.com/user-attachments/assets/a1a3595c-ad41-49da-9221-53e55783b358)
    - [[Current] — Doxygen + Doxygen Awesome CSS Side bar only theme](https://p4lang.github.io/p4c/)
 
 ### Deployment Options
