@@ -30,7 +30,7 @@ The official report of [my project in Google Summer of Code 2024](https://summer
 
 ## Project Overview
 
-For Google Summer of Code 2024, I developed an automated documentation system for the P4 Compiler. The project focused on improving the accessibility and organization of the P4 Compiler’s documentation, leveraging Doxygen for documentation generation and GitHub Actions for automation. The results include a centralized, up-to-date documentation site hosted on GitHub Pages, with enhanced navigation and interactive features.
+The primary objective of this project was to improve the documentation infrastructure of the P4 Compiler (p4c). This involved upgrading tools, automating deployment processes, enhancing the user interface, and ensuring that the documentation is both comprehensive and accessible. The project was aimed at making the documentation easier to maintain and more useful for both developers and users of the P4 language.
 
 ![image](https://github.com/user-attachments/assets/97be1b94-fcac-422f-b9e8-5da007948c0d)
 
@@ -53,15 +53,16 @@ Initially, I considered using Sphinx with Doxygen and Breathe for documentation 
 
 After discussions with mentors, it became clear that Doxygen with Doxygen Awesome CSS met all our needs while avoiding the additional complexity of incorporating Sphinx and Exhale. This choice allowed us to utilize a tool familiar to maintainers and contributors without introducing a new layer of complexity.
 
-### Personal Repository & Netlify for Builds
-1. Intially Utilized a personal repository with Netlify for initial builds and sharing mockups. This approach allowed for iterative development and testing before deploying to GitHub Pages on the official repository.
-2. Created mockups during iteration:
+### Documentation Development and Build Process
+1. **Initial Development and Testing:** Utilized a personal repository and Netlify for early-stage builds and sharing of mockups. This approach facilitated iterative development and testing before the final deployment on GitHub Pages. Mockup examples include: 
    - [Doxygen output with obsolete documentation](https://p4-compiler-docs.netlify.app/)
      ![image](https://github.com/user-attachments/assets/c03dcc8e-31fa-4f47-b259-ba8e00da0490)
    - [Sphinx version with “pydata” theme](https://p4-docs.netlify.app/)
      ![image](https://github.com/user-attachments/assets/01bcdbb0-137d-4af1-899a-d25811aecc84)
    - [Doxygen + Doxygen Awesome CSS With Nav Bar](https://661bbb9fb70e8b584e959c0e--p4c-pototype3.netlify.app/)
      ![image](https://github.com/user-attachments/assets/a1a3595c-ad41-49da-9221-53e55783b358)
+
+2. **Transition to GitHub Pages:** After refining the mockups and confirming the build process, the final documentation was deployed on GitHub Pages for consistent and reliable access. This shift from Netlify to GitHub Pages streamlined the hosting process and ensured seamless integration with the main repository.
 
 ### Deployment Options
 After considering various deployment platforms such as Netlify and Vercel, GitHub Pages was selected for deployment. This choice was motivated by the desire to avoid additional hosting costs and administrative overhead. This decision was reached after consulting with mentors.
