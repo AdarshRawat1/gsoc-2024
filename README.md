@@ -77,7 +77,7 @@ To make reviewing documentation changes smoother and more transparent, I introdu
 
 #### Key Updates
 - **PR Preview:** Automatically builds and deploys each documentation PR to a unique GitHub Pages URL.
-- **Comment Updates:** Adds comments with preview links and build status.
+- **Comment Updates:** Adds/Updates comments with preview links and build status.
 - **Broken Builds:** Detects and reports any build issues.
 #### Benefits
 - **Immediate Feedback:** Real-time previews for faster review and adjustments.
@@ -118,6 +118,15 @@ This script iterates over the labels attached to the PR and returns true if the 
       const hasDocumentationLabel = labels.some(label => label.name === 'documentation');
       return hasDocumentationLabel;
 ```
+
+### Doxygen `v1.12.0` Update: Enhancements and Open Source Impact
+**Background on Doxygen v1.12.0 Feature**
+Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavored comments, allowing Doxygen commands to be hidden in GitHub previews using the `<!--! ... -->` syntax. This feature was the direct result of a feature request [[3]](#3-feature-request--capability-to-render-github-flavor-markdown-comments) I submitted to address the issue of visible Doxygen commands cluttering the rendered views of Markdown documents(README Files) on GitHub.
+
+#### Impact of the Update
+- **Enhanced Documentation:** By adopting this new comment style, all Doxygen commands are now hidden in GitHub previews, making the documentation cleaner and more professional.
+- **Updated Workflow:** I updated the Doxygen workflow action from `v1.11.0` to `v1.12.0`, ensuring that all documentation now takes advantage of this new feature. This update mandates the strict use of Doxygen v1.12.0 for consistent output across the project.
+- **Dependency Management:** Dependencies were updated accordingly to support this new Doxygen version. This change requires all contributors to upgrade to `v1.12.0` to avoid confusion during documentation merges, particularly when using commands like `<!--!\include{doc} "../lib/README.md"-->` as they will not be processed by previous versions of doxygen.
 
 
 ## Project Phases and Achievements
@@ -181,26 +190,18 @@ During this project, I often had to change my approach and come up with new idea
 
 I learned the importance of learning in public. Initially, I felt skeptical about sharing my progress and failures openly, but the overwhelmingly positive response and genuine support from the community and mentors reassured me. This encouragement was instrumental in helping me work confidently towards the project.
 
-### Doxygen Update and the Power of Open Source
-Background on Doxygen v1.12.0 Feature
-Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavored comments, allowing Doxygen commands to be hidden in GitHub previews using the `<!--! ... -->` syntax. This feature was the direct result of a feature request [[3]](#3-feature-request--capability-to-render-github-flavor-markdown-comments) I submitted to address the issue of visible Doxygen commands cluttering README files and other Markdown documents.
-
-#### Impact of the Update
-- **Updated Workflow:** I updated the Doxygen workflow action from v1.11.0 to v1.12.0, ensuring that all documentation now takes advantage of this new feature. This update mandates the strict use of Doxygen v1.12.0 for consistent output across the project.
-- **Enhanced Documentation:** By adopting this new comment style, all Doxygen commands are now hidden in GitHub previews, making the documentation cleaner and more professional.
-- **Dependency Management:** Dependencies were updated accordingly to support this new Doxygen version. This change requires all contributors to upgrade to `v1.12.0` to avoid confusion during documentation merges, particularly when using commands like `<!--!\include{doc} "../lib/README.md"-->` as they will not be processed by previous versions of doxygen.
-
 #### Reflections on Open Source Collaboration
 This experience highlighted the immense power of open-source tools and communities. The rapid incorporation of the feature request into Doxygen's latest release underscored the collaborative spirit and responsiveness that are the hallmarks of open source. It also reinforced the importance of contributing to open-source projects, as even small changes can have a significant impact on a wide range of users.
 
 In this project, I saw firsthand how contributions from the community can lead to enhancements that benefit everyone. Working within an open-source ecosystem allowed me to both give back and learn from others, reinforcing the idea that open-source software isn't just about code — it's about community.
 
-## Final Thoughts
-This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
 
 ### What's Left to Do (Future Steps)
 Documentation is an ever-evolving aspect of the project. Future work includes regularly updating the documentation to reflect new features, changes, and improvements.
 The instructions for using Doxygen and maintaining the documentation are currently under review. Once finalized, they will assist all contributors in effectively updating and expanding the documentation. Continued attention to these guidelines, along with regular updates and automated changelog integration, will ensure the documentation remains accurate and comprehensive.
+
+## Final Thoughts
+This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
 
 ## References
 
