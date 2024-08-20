@@ -172,6 +172,22 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 - **GitHub Actions Integration:** Developed actions to automate documentation builds and previews.
 - **PR Review Enhancements:** Automated preview creation for pull requests, with status updates and links for efficient review.
 
+## Supporting Pull Requests
+
+- [Docs:Content Organization & Add 'Frontend' and 'Midend' Sections](https://github.com/p4lang/p4c/pull/4876)
+- [Docs: Update compiler file structure](https://github.com/p4lang/p4c/pull/4761)
+- [Docs: Initial sequence of pages in Documentation](https://github.com/p4lang/p4c/pull/4758) 
+- [Docs: Fixing diagram paths in generated docs](https://github.com/p4lang/p4c/pull/4755)
+- [Minor Fix: Graphs Backend Example Images](https://github.com/p4lang/p4c/pull/4749)
+- [Docs: Add theme dependency and instructions](https://github.com/p4lang/p4c/pull/4747)
+- [Fix : Compatibility issues with Doxygen version in runner and configuration](https://github.com/p4lang/p4c/pull/4732)
+- [[Docs] Non-Breaking change of "p4c" to "P4C"](https://github.com/p4lang/p4c/pull/4620)
+- [Fix: Outdated links](https://github.com/p4lang/p4c/pull/4618)
+- [[Docs] Add Table of Content](https://github.com/p4lang/p4c/pull/4590)
+- [Improve & Move "How to contribute" section to Top level readme](https://github.com/p4lang/p4c/pull/4580)
+- [[DOCS][Refactor] Replace direct links with word links](https://github.com/p4lang/p4c/pull/4577)
+- [Fix Resource links in Doxygen documentation](https://github.com/p4lang/p4c/pull/4565)
+
 
 ## Closing Note
 
