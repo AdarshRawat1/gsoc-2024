@@ -174,6 +174,10 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 
 ## Supporting Pull Requests
 
+#### [Contributions to P4 Tutorials](https://github.com/p4lang/tutorials/pulls?q=is%3Apr+author%3AAdarshRawat1+)
+
+#### [Contributions to P4 Compiler ](https://github.com/p4lang/p4c/pulls?q=is%3Apr+author%3AAdarshRawat1+)
+
 - [Docs:Content Organization & Add 'Frontend' and 'Midend' Sections](https://github.com/p4lang/p4c/pull/4876)
 - [Docs: Update compiler file structure](https://github.com/p4lang/p4c/pull/4761)
 - [Docs: Initial sequence of pages in Documentation](https://github.com/p4lang/p4c/pull/4758) 
