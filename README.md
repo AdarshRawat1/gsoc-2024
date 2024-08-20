@@ -143,7 +143,7 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 - **Organized Documentation:** Configured Doxygen and Doxygen Awesome CSS for better organization and clarity.
   <br>
   [PR - Docs : Configuring Doxygen Awesome CSS ](https://github.com/p4lang/p4c/pull/4737)
-- **Interactive SVGs:** Replaced PNGs with interactive SVGs for high-quality, scalable diagrams. View  [Click to View Previous Diagrams](#https://p4-compiler-docs.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html) | | [Click to view Updated Diagrams](#https://p4c-pototype3.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html)
+- **Interactive SVGs:** Replaced PNGs with interactive SVGs for high-quality, scalable diagrams. <br> [Click to View Previous Diagrams](#https://p4-compiler-docs.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html) | | [Click to view Updated Diagrams](#https://p4c-pototype3.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html)
 - **Dynamic Architecture Diagram:** Added a homepage diagram illustrating the P4 Compiler architecture with interactive links.
 - Utilized **Graphviz's diagram generation** to visualize class and function relationships.
 
