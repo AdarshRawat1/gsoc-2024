@@ -74,6 +74,8 @@ An automated workflow was set up to handle Doxygen documentation builds. This pr
 ### Automated PR Preview Workflow
 [PR - Feat: PR Preview Workflow via GitHub Pages](https://github.com/p4lang/p4c/pull/4848)
 To make reviewing documentation changes smoother and more transparent, I introduced a new PR preview workflow. This update enhances how we assess documentation updates before they merge into the main branch by using GitHub Pages for live previews. This means we can see exactly how changes will look in real-time, making it easier to review and refine documentation.
+![Preview of PR](https://github.com/user-attachments/assets/06c3998e-f67e-4376-b630-9ca31001a488)
+
 
 #### Key Updates
 - **PR Preview:** Automatically builds and deploys each documentation PR to a unique GitHub Pages URL.
