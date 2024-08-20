@@ -73,7 +73,8 @@ After finalizing the mockups and build process, the documentation was deployed o
 ## Workflow Automation 
 
 ### Doxygen Automated Builds Workflow
-[PR - Feat: PR Preview Workflow via GitHub Pages](https://github.com/p4lang/p4c/pull/4702)
+[PR - Configure: DOXYGEN for documentation generation](https://github.com/p4lang/p4c/pull/4701) <br>
+[PR - Docs : Configure Doxygen GitHub pages deploy Action ](https://github.com/p4lang/p4c/pull/4702) <br>
 An automated workflow was set up to handle Doxygen documentation builds. This process ensures that the documentation is updated consistently with the latest changes, providing a reliable and up-to-date reference for all contributors.
 
 ### Automated PR Preview Workflow
@@ -140,21 +141,25 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 
 ### Enhanced Documentation Quality
 - **Organized Documentation:** Configured Doxygen and Doxygen Awesome CSS for better organization and clarity.
+  <br>
+  [PR - Docs : Configuring Doxygen Awesome CSS ](https://github.com/p4lang/p4c/pull/4737)
 - **Interactive SVGs:** Replaced PNGs with interactive SVGs for high-quality, scalable diagrams. View  [Click to View Previous Diagrams](#https://p4-compiler-docs.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html) | | [Click to view Updated Diagrams](#https://p4c-pototype3.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html)
 - **Dynamic Architecture Diagram:** Added a homepage diagram illustrating the P4 Compiler architecture with interactive links.
-- Utilized Graphviz's diagram generation to visualize class and function relationships.
+- Utilized **Graphviz's diagram generation** to visualize class and function relationships.
 
 ### Improved Documentation Accessibility
 - **Documentation Sync and Cleanup:** Updated and fixed broken links to align with the latest codebase.
-Centralized Hosting: Deployed documentation to GitHub Pages for real-time updates and accessibility.
+- **Centralized Hosting:** Deployed documentation to GitHub Pages for real-time updates and accessibility.
 - **Permanent Links:** Added links to specific sections for easier navigation and sharing.
-Enhanced Visual and Functional Features
+## Enhanced Visual and Functional Features
 - **Dark Mode and Formatting:** Introduced dark mode and improved navigation bar formatting for a better reading experience.
 - **Customized Theme:** Adopted a P4 color scheme for a consistent visual experience.
 
 ### Efficient Onboarding and Project Management
-- **Contribution Guidelines:** Created detailed guidelines to assist new contributors with best practices and setup instructions.
-- **Changelog Integration:** Added changelogs to track changes and help contributors stay informed about project updates.
+- **Contribution Guidelines:** Created detailed guidelines to assist new contributors with best practices and setup instructions.<br>
+  [PR - [docs] Add Comment Style Guide](https://github.com/p4lang/p4c/pull/4573)
+- **Changelog Integration:** Added changelogs to track changes and help contributors stay informed about project updates.<br>
+  [PR - [Docs] Add initial CHANGELOG.md with changelogs from previous release](https://github.com/p4lang/p4c/pull/4708)
 ### Automated and Streamlined Processes
 - **GitHub Actions Integration:** Developed actions to automate documentation builds and previews.
 - **PR Review Enhancements:** Automated preview creation for pull requests, with status updates and links for efficient review.
