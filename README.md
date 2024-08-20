@@ -160,9 +160,14 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 
 ### Efficient Onboarding and Project Management
 - **Contribution Guidelines:** Created detailed guidelines to assist new contributors with best practices and setup instructions.<br>
+  [Create CONTRIBUTING.md](https://github.com/p4lang/p4c/pull/4581) <br>
   [PR - [docs] Add Comment Style Guide](https://github.com/p4lang/p4c/pull/4573)
 - **Changelog Integration:** Added changelogs to track changes and help contributors stay informed about project updates.<br>
   [PR - [Docs] Add initial CHANGELOG.md with changelogs from previous release](https://github.com/p4lang/p4c/pull/4708)
+  <br>
+  [PR - Docs : Changelogs release update for v1.2.4.13](https://github.com/p4lang/p4c/pull/4788)
+  <br>
+  [PR - [Docs] : Changelogs release update for v1.2.4.14](https://github.com/p4lang/p4c/pull/4849)
 ### Automated and Streamlined Processes
 - **GitHub Actions Integration:** Developed actions to automate documentation builds and previews.
 - **PR Review Enhancements:** Automated preview creation for pull requests, with status updates and links for efficient review.
