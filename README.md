@@ -187,7 +187,9 @@ In this project, I saw firsthand how contributions from the community can lead t
 
 ### What's Left to Do (Future Steps)
 Documentation is an ever-evolving aspect of the project. Future work includes regularly updating the documentation to reflect new features, changes, and improvements.
-The instructions for using Doxygen and maintaining the documentation are currently under review. Once finalized, they will assist all contributors in effectively updating and expanding the documentation. Continued attention to these guidelines, along with regular updates and automated changelog integration, will ensure the documentation remains accurate and comprehensive.
+
+The [ PR - Docs: Update Contributor Documentation Guidelines](https://github.com/p4lang/p4c/pull/4875) provides detailed instructions for future contributors on how to use Doxygen and maintain the documentation effectively. These guidelines will play a crucial role in ensuring that contributors can consistently update and expand the documentation. Continued attention to these instructions, along with regular updates and automated changelog integration, will help keep the documentation accurate and comprehensive.
+
 
 ## Final Thoughts
 This was one of the best experiences I’ve ever had. I sincerely thank Google and my project mentors for selecting me for the GSoC program and giving me the opportunity to discover how amazing coding can be.
