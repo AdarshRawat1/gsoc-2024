@@ -129,52 +129,29 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 - **Dependency Management:** Dependencies were updated accordingly to support this new Doxygen version. This change requires all contributors to upgrade to `v1.12.0` to avoid confusion during documentation merges, particularly when using commands like `<!--!\include{doc} "../lib/README.md"-->` as they will not be processed by previous versions of doxygen.
 
 
-## Project Phases and Achievements
+## Key Improvements and Achievements
 
-### Phase 1: Development
+### Enhanced Documentation Quality
+- **Organized Documentation:** Configured Doxygen and Doxygen Awesome CSS for better organization and clarity.
+- **Interactive SVGs:** Replaced PNGs with interactive SVGs for high-quality, scalable diagrams. View  [Click to View Previous Diagrams](#https://p4-compiler-docs.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html) | | [Click to view Updated Diagrams](#https://p4c-pototype3.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html)
+- **Dynamic Architecture Diagram:** Added a homepage diagram illustrating the P4 Compiler architecture with interactive links.
+- Utilized Graphviz's diagram generation to visualize class and function relationships.
 
-#### Documentation Generation
-- Configured Doxygen and Doxygen Awesome CSS for organized documentation.
-- Utilized Doxygen’s diagram generation to visualize class and function relationships.
-- Enhanced repository content organization for improved clarity.
+### Improved Documentation Accessibility
+- **Documentation Sync and Cleanup:** Updated and fixed broken links to align with the latest codebase.
+Centralized Hosting: Deployed documentation to GitHub Pages for real-time updates and accessibility.
+- **Permanent Links:** Added links to specific sections for easier navigation and sharing.
+Enhanced Visual and Functional Features
+- **Dark Mode and Formatting:** Introduced dark mode and improved navigation bar formatting for a better reading experience.
+- **Customized Theme:** Adopted a P4 color scheme for a consistent visual experience.
 
-#### Documentation Sync and Cleanup
-- Updated documentation structure to match the latest codebase.
-- Fixed broken links throughout the documentation.
+### Efficient Onboarding and Project Management
+- **Contribution Guidelines:** Created detailed guidelines to assist new contributors with best practices and setup instructions.
+- **Changelog Integration:** Added changelogs to track changes and help contributors stay informed about project updates.
+### Automated and Streamlined Processes
+- **GitHub Actions Integration:** Developed actions to automate documentation builds and previews.
+- **PR Review Enhancements:** Automated preview creation for pull requests, with status updates and links for efficient review.
 
-#### Centralized Hosting on GitHub Pages
-- Deployed documentation to GitHub Pages for real-time updates.
-
-#### Interactive Architecture Diagram
-- Added a dynamic homepage diagram illustrating the P4 Compiler architecture with links to relevant sections.
-
-#### Onboarding and Changelog Integration
-- Created comprehensive Contribution Guidelines to assist onboarding of new contributors, covering best practices, coding standards, and setup instructions.
-- Added changelogs to the repository to keep track of changes, making it easier for contributors to follow updates and understand the project’s evolution.
-
-### Phase 2: GitHub Actions Integration
-
-#### Automated Build Process
-- Developed a GitHub Action to automate documentation builds.
-
-#### PR Review Enhancement
-- Automated preview creation for pull requests, including preview link and deployment status in comments.
-- Managed broken builds by updating PR comments with status information.
-
-## Key Improvements
-
-### High-Quality Diagrams with Interactive SVGs
-
-- **Old Approach**: Diagrams were generated as PNGs in Doxygen. While functional, PNGs can become difficult to navigate, especially with complex graphs.
-- **New Approach**: We’ve switched to interactive SVGs, which maintain high quality even when zoomed in or scaled. This change significantly enhances the usability of complex diagrams. <br>
-  [Click to View Previous Diagrams](#https://p4-compiler-docs.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html) | | [Click to view Updated Diagrams](#https://p4c-pototype3.netlify.app/class_p4_1_1_control_plane_a_p_i_1_1_p4_runtime_arch_handler_iface.html)
-
-### Enhanced Visual Appeal
-- **Dark Mode & Improved Formatting**: The updated documentation features a dark mode option and a better-formatted navigation bar, making the reading experience more comfortable and visually appealing.
-
-### Well-Organized Structure with Enhanced Features
-- **Permanent Links to Headings**: Added permanent links to specific sections of the documentation for easier sharing and navigation.
-- **Customized Theme**: The theme is based on the P4 color scheme, offering a consistent visual experience.
 
 ## Closing Note
 
