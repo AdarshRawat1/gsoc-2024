@@ -128,11 +128,14 @@ This script iterates over the labels attached to the PR and returns true if the 
 ```
 
 ### Doxygen `v1.12.0` Update: Enhancements and Open Source Impact
+[PR - Bump Documentation build workflow action from Doxygen `v1.11.0` to `v1.12.0` ](https://github.com/p4lang/p4c/pull/4861) <br>
 **Background on Doxygen v1.12.0 Feature**
 Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavored comments, allowing Doxygen commands to be hidden in GitHub previews using the `<!--! ... -->` syntax. This feature was the direct result of a feature request [[3]](#3-feature-request--capability-to-render-github-flavor-markdown-comments) I submitted to address the issue of visible Doxygen commands cluttering the rendered views of Markdown documents(README Files) on GitHub.
 
 #### Impact of the Update
-- **Enhanced Documentation:** By adopting this new comment style, all Doxygen commands are now hidden in GitHub previews, making the documentation cleaner and more professional.
+- **Enhanced Documentation:** By adopting this new comment style, all Doxygen commands are now hidden in GitHub previews, making the documentation cleaner and more professional.<br>
+[PR - Docs : Content Organization and Documentation Updates ](https://github.com/p4lang/p4c/pull/4850)
+
 - **Updated Workflow:** I updated the Doxygen workflow action from `v1.11.0` to `v1.12.0`, ensuring that all documentation now takes advantage of this new feature. This update mandates the strict use of Doxygen v1.12.0 for consistent output across the project.
 - **Dependency Management:** Dependencies were updated accordingly to support this new Doxygen version. This change requires all contributors to upgrade to `v1.12.0` to avoid confusion during documentation merges, particularly when using commands like `<!--!\include{doc} "../lib/README.md"-->` as they will not be processed by previous versions of doxygen.
 
@@ -168,6 +171,7 @@ Doxygen v1.12.0 introduced a critical feature enabling the use of GitHub-flavore
 ## Closing Note
 
 ### A Touch of Fun in the P4 Compiler Architecture Diagram
+[PR - Docs : Add Home page for documentation](https://github.com/p4lang/p4c/pull/4764) <br>
 In the spirit of keeping things lively, we came up with the idea of sneaking a little Easter egg into the P4 Compiler’s documentation during one of our team meetings. If you’re feeling curious (or just bored), try clicking on the P4 Compiler logo in the top left corner of the homepage. What happens next? Well, the architecture diagram decides to throw a tiny celebration by animating its lines, as if to say, “Surprise! You found us!”
 
 ![Interactive Animation Toggle in P4 Compiler Architecture Diagram](https://github.com/user-attachments/assets/da586665-08b7-42ff-93ea-461903161317)
