@@ -8,28 +8,25 @@ The official report of [my project in Google Summer of Code 2024](https://summer
 
 
 ## Table of Contents
+
 1. [Project Overview](#project-overview)
 2. [Technical Considerations](#technical-considerations)
    - [Doxygen vs. Sphinx: Documentation Tools Comparison](#doxygen-vs-sphinx-documentation-tools-comparison)
-   - [Personal Repository & Netlify for Builds](#personal-repository--netlify-for-builds)
+3. [Documentation Development and Build Process](#documentation-development-and-build-process)
    - [Deployment Options: Transition to GitHub Pages](#deployment-options-transition-to-github-pages)
-   - [Workflow Automation](#workflow-automation)
-     - [Doxygen Automated Builds Workflow](#doxygen-automated-builds-workflow)
-     - [Automated PR Preview Workflow](#automated-pr-preview-workflow)
-     - [Challenges with PRs from External Forks](#challenges-with-prs-from-external-forks)
-     - [Label Check Implementation for `pull_request_target` Trigger](#label-check-implementation-for-pull_request_target-trigger)
-   - [Doxygen v1.12.0 Update: Enhancements and Open Source Impact](#doxygen-v1120-update-enhancements-and-open-source-impact)
-3. [Key Improvements and Achievements](#key-improvements-and-achievements)
+4. [Workflow Automation](#workflow-automation)
+   - [Doxygen Automated Builds Workflow](#doxygen-automated-builds-workflow)
+   - [Automated PR Preview Workflow](#automated-pr-preview-workflow)
+   - [Challenges with PRs from External Forks](#challenges-with-prs-from-external-forks)
+   - [Label Check Implementation for `pull_request_target` Trigger](#label-check-implementation-for-pull_request_target-trigger)
+5. [Doxygen `v1.12.0` Update: Enhancements and Open Source Impact](#doxygen-v1120-update-enhancements-and-open-source-impact)
+6. [Key Improvements and Achievements](#key-improvements-and-achievements)
    - [Enhanced Documentation Quality](#enhanced-documentation-quality)
    - [Improved Documentation Accessibility](#improved-documentation-accessibility)
    - [Enhanced Visual and Functional Features](#enhanced-visual-and-functional-features)
    - [Efficient Onboarding and Project Management](#efficient-onboarding-and-project-management)
    - [Automated and Streamlined Processes](#automated-and-streamlined-processes)
-4. [Closing Note](#closing-note)
-   - [A Touch of Fun in the P4 Compiler Architecture Diagram](#a-touch-of-fun-in-the-p4-compiler-architecture-diagram)
-   - [Reflections and Learnings](#reflections-and-learnings)
-5. [Final Thoughts](#final-thoughts)
-6. [References](#references)
+7. [Supporting Pull Requests](#supporting-pull-requests)
 
 
 
